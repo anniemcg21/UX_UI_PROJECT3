@@ -30,6 +30,7 @@
   </head>
 <!--Body Content-->
   <body>
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="images/logoWithText.svg">
@@ -92,7 +93,7 @@
       <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-lg-3">
                     <flip-card>
                         <img slot="card-image-front" src="images/koaLg.svg" alt="100%x180">
                         <span slot="card-title-front">KOA</span>
@@ -100,7 +101,7 @@
                         <span slot="card-location-front">Long Beach, CA</span>
                     </flip-card>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-lg-3">
                     <flip-card>
                         <img slot="card-image-front" src="images/auroraLg.svg" alt="100%x180">
                         <span slot="card-title-front">AURORA</span>
@@ -108,6 +109,22 @@
                         <span slot="card-location-front">Yucca Valley, CA</span>
                     </flip-card>
                 </div>
+                <div class="col-lg-3">
+                  <flip-card>
+                      <img slot="card-image-front" src="images/auroraLg.svg" alt="100%x180">
+                      <span slot="card-title-front">AURORA</span>
+                      <span slot="card-text-front">Medium, Adult</span>
+                      <span slot="card-location-front">Yucca Valley, CA</span>
+                  </flip-card>
+              </div>
+              <div class="col-lg-3">
+                <flip-card>
+                    <img slot="card-image-front" src="images/auroraLg.svg" alt="100%x180">
+                    <span slot="card-title-front">AURORA</span>
+                    <span slot="card-text-front">Medium, Adult</span>
+                    <span slot="card-location-front">Yucca Valley, CA</span>
+                </flip-card>
+            </div>
             </div>
         </div>
       </section>
@@ -129,13 +146,16 @@
               Luna Siberian Rescue</span>
           </p>
           <button onclick="myFunction()" id="myBtn">Read more</button>
+        </section>
         <!-- LSR Stats -->
-        <section class="row">
-          <div class="col-6">
-            <img src="images/homepageStats.svg" alt="">
-          </div>
-          <div class="col-6">
-            <img src="images/homepageStatsHusky.svg" alt="">
+        <section class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <img src="images/homepageStats.svg" alt="">
+            </div>
+            <div class="col-6">
+              <img src="images/homepageStatsHusky.svg" alt="">
+            </div>
           </div>
         </section>
         <!-- Happy Tails -->
@@ -181,7 +201,34 @@
           </a>
         </div>
         </section>
+        <!-- Footer -->
+        <section>
+          <div class="footer"> <!-- Background -->
+            <div class="footer__text">
+              <div> <!-- Newsletter -->
+                <a href="..." class="footer__link">Join Our Newsletter</a>
+              </div>
+              <div> <!-- Social Icons -->
+                <a href="https://www.facebook.com/lunasavessiberians/?ref=page_internal" class="footer__social">
+                  <img src="images/iconFacebook.svg">
+                </a>
+                <a href="https://www.instagram.com/luna_siberian_rescue/" class="footer__social">
+                  <img src="images/iconInstagram.svg">
+                </a>
+              </div>
+              <div> <!-- Email -->
+                <a href="mailto:lunasiberianrescue@aol.com" class="footer__link">lunasiberianrescue@aol.com</a>
+              </div>
+              <div> <!-- Address -->
+                <a href="https://goo.gl/maps/Z2ns6kiSNzBjZbbH7" class="footer__link">57552 Twenty Nine Palms Hwy Suite 294<br>Yucca Valley, CA 92284</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <p>© 2021 Luna Siberian Husky Rescue</p>
+          </div>
+        </section>
 
-    </section>
+    
   </body>
 </html>

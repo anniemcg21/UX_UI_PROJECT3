@@ -1,1 +1,48 @@
 #more {display: none;}
+
+/*Buttons*/
+.button__text {
+    
+}
+
+/*Fonts*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+.footer {
+    height: 400px;
+    background-image: url(../images/desktopFooter1920.svg);
+    background-repeat: no-repeat;
+}
+.footer__text{
+    text-align: center;
+    padding-top: 20vh;
+}
+.footer__link {
+    color: #FDFEFF;
+}
+.footer__copyright {
+    background-color: #56414F;
+    color: #FDFEFF;
+    text-align: center;
+    height: 5vh;
+    padding-top: 1vh;
+}
+.footer__social {
+
+}
+
+/*media queries
+1. footer o.g. = 1920 --> drop to 1440 --> drop to 375
