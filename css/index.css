@@ -1,5 +1,11 @@
 #more {display: none;}
-
+.max-width {
+    max-width: 1200px
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
 /*Buttons*/
 .button__text {
     
@@ -13,8 +19,31 @@
 
 
 
-
-
+/*Background Colors*/
+.bg-light {
+    background-color: #FDFEFF !important;
+}
+/*Carousel*/
+#slider {
+    /*height: 350px;
+    overflow: hidden;
+    width: 100%;*/
+}
+.carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+.carousel-control-prev-icon {
+    background-image: url(../images/carouselArrowLeft.svg);
+    width: 80px;
+    height: 80px;
+}
+.carousel-control-next-icon {
+    background-image: url(../images/carouselArrowRight.svg);
+    width: 80px;
+    height: 80px;
+}
 
 
 
@@ -28,7 +57,7 @@
 }
 .footer__text{
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 17vh;
 }
 .footer__link {
     color: #FDFEFF;
