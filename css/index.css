@@ -7,8 +7,43 @@
     padding-right: 0;
 }
 /*Buttons*/
-.button__text {
-    
+.btn-primary {
+    border-radius: 5px;
+    border-color: #56414F;
+    background-color: #56414F;
+    color: #FDFEFF;
+    width: 300px;    
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    box-shadow: 3px 5px 10px rgba(86, 65, 79, 0.4);
+}
+.btn-primary:hover {
+    border-color: #806075;
+    background-color: #806075;
+}
+.btn-secondary {
+    border-radius: 5px;
+    border-color: #806075;
+    background-color: #806075;
+    color: #FDFEFF;
+    width: 200px;    
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 10px;
+}
+.btn-link {
+    color: #56414F;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+}
+.btn-link:hover {
+    color:#56414F
 }
 
 /*Fonts*/
@@ -39,9 +74,59 @@ p {
     color: #6A747D;
     margin-top: 40px;
 }
+/* Bottom Margin */
+.bottom__margin {
+    margin-bottom: 4rem;
+}
 
-
-
+/* Navbar */
+.navbar-custom {
+    background-color: #FDFEFF;
+}
+.nav-link {
+    color: #749EC1 !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+}
+.nav-item {
+    padding-right: 24px;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #749EC1;
+    text-decoration: underline;
+}
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+    background-color: #8499AD;
+}
+.navbar-custom .dropdown-item {
+    color: #FDFEFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+}
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: #8499AD;
+    background-color: #FDFEFF;
+}
+.btn-info {
+    border-radius: 5px;
+    border-color: #56414F;
+    background-color: #56414F;
+    color: #FDFEFF;
+    width: 180px;    
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 10px;
+}
+.btn-info:hover {
+    border-color: #806075;
+    background-color: #806075;
+}
 
 /*Background Colors*/
 .bg-light {
@@ -51,6 +136,8 @@ p {
 .jumbotron {
     background-color: #FDFEFF;
     padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .home__hero--image {
     width: 830px;
@@ -58,6 +145,17 @@ p {
 .home__hero--text {
     padding-top: 60px;
 }
+/* Quiz CTA */
+.quiz__cta {
+    background-color: #56414F;
+}
+.quiz__cta--text{
+    color: #FDFEFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20pt;
+    font-weight: 400;
+}
+
 /*Carousel*/
 #slider {
     /*height: 350px;
