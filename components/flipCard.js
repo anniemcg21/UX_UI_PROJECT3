@@ -275,7 +275,6 @@ flipCardTemplate.innerHTML = `
         background-image: linear-gradient(to bottom, #6A747D, #6A747D 45%, #FDFEFF 45%);
     }
 </style>
-<!-- End Card Flip 1 -->
 `;
 
 class FlipCard extends HTMLElement {

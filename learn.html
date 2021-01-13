@@ -24,13 +24,19 @@
     -->
 
     <!-- Component Injection -->
-    <script src="components/flipCard.js" type="text/javascript" defer></script>
+    <script src="components/flipCardFAQ.js" type="text/javascript" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Montserrat">
+
 
     <title>Luna Siberian Husky Rescue</title>
   </head>
   <body class="bg-light">
+  <!-- Navigation -->
     <section class="container-fluid sticky-top max bg-light shadow-sm">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
         <a class="navbar-brand" href="/index.html">
             <img src="images/logoWithText.svg">
         </a>
@@ -59,21 +65,28 @@
               <a class="nav-link" href="#">Foster</a>
             </li>
             <li class="nav-item">
-                <a class="btn btn-primary" href="#">Donate</a>
+                <a class="btn btn-info" href="#">DONATE</a>
               </li>
           </ul>
         </div>
       </nav>
     </section>
-      <!-- Hero -->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Thinking About Adopting a Husky?</h1>
+  <!-- Hero -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="d-flex flex-row justify-content-between">
+        <div class="home__hero--text">
+          <div class="text__hero--learn">Thinking About Adopting a Husky?</div>
+          <div class="text__subhero--learn">Before you consider adding a husky to your family, let’s get back to the basics. Take this quiz to learn more about this unique breed. </div>
+          <a class="btn btn-primary" href="#">BEGIN QUIZ</a>
+        </div>
+        <div>
+          <img class="ml-n5 home__hero--image" src="images/learnpageHeroTransparent.png">
         </div>
       </div>
+    </div>
       <!-- FAQ -->
-      <div class="container-fluid d-flex p-2">
-        <div class="p-2 flex-fill">
+      <div class="container-fluid d-flex p-2 max-width">
+        <div class="p-2 flex-fill bottom__margin">
             <h1>Frequently Asked Questions</h1>
         </div>  
         <div>
@@ -82,46 +95,58 @@
       </div>
       <!-- FAQ Cards -->
       <section>
-        <div class="container">
+        <div class="container bottom__margin">
             <div class="row">
                 <div class="col-lg-3">
-                    <flip-card>
-                        <img slot="card-image-front" src="images/koaLg.svg" alt="100%x180">
-                        <span slot="card-title-front">KOA</span>
-                        <span slot="card-text-front">Medium, Adult</span>
-                        <span slot="card-location-front">Long Beach, CA</span>
-                    </flip-card>
+                    <flip-card-faq>
+                        <img slot="card-image-front" src="images/faqIconTrain.svg" alt="train">
+                        <span slot="card-details-front">Are huskies easy to train?</span>
+                        <img slot="card-image-back" src="images/faqIconTrain.svg" alt="train" style="width:50px">
+                        <span slot="card-subtitle-back">Are huskies easy to train?</span>
+                        <span slot="card-back-description">Huskies are independent, athletic, and intelligent.</span>
+                        <span slot="card-text-back">But because they are pack dogs, they are not easily trained. Huskies will challenge your leadership and test boundaries.</span>
+                    </flip-card-faq>
                 </div>
                 <div class="col-lg-3">
-                    <flip-card>
-                        <img slot="card-image-front" src="images/auroraLg.svg" alt="100%x180">
-                        <span slot="card-title-front">AURORA</span>
-                        <span slot="card-text-front">Medium, Adult</span>
-                        <span slot="card-location-front">Yucca Valley, CA</span>
-                    </flip-card>
+                    <flip-card-faq>
+                        <img slot="card-image-front" src="images/faqIconShed.svg" alt="shed">
+                        <span slot="card-details-front">How often do huskies shed?</span>
+                        <img slot="card-image-back" src="images/faqIconShed.svg" alt="shed" style="width:50px">
+                        <span slot="card-subtitle-back">How often do huskies shed?</span>
+                        <span slot="card-back-description">Generally happens twice-a-year.</span>
+                        <span slot="card-text-back">A husky’s coat has two layers, an undercoat and a topcoat. When Huskies shed, this is known as ‘blowing their undercoat’ </span>
+                    </flip-card-faq>
                 </div>
                 <div class="col-lg-3">
-                    <flip-card>
-                        <img slot="card-image-front" src="images/auroraLg.svg" alt="100%x180">
-                        <span slot="card-title-front">AURORA</span>
-                        <span slot="card-text-front">Medium, Adult</span>
-                        <span slot="card-location-front">Yucca Valley, CA</span>
-                    </flip-card>
+                    <flip-card-faq>
+                      <img slot="card-image-front" src="images/faqIconExercise.svg" alt="exercise">
+                      <span slot="card-details-front">Do huskies need a lot fo exercise?</span>
+                      <img slot="card-image-back" src="images/faqIconExercise.svg" alt="exercise" style="width:50px">
+                      <span slot="card-subtitle-back">Do huskies need a lot fo exercise?</span>
+                      <span slot="card-back-description">At least 2 hours per day, split into sessions.</span>
+                      <span slot="card-text-back">Siberians are active dogs both physically and mentally. Jogging, walking, and swimming are great daily activities. </span>
+                    </flip-card-faq>
                 </div>
                 <div class="col-lg-3">
-                    <flip-card>
-                        <img slot="card-image-front" src="images/auroraLg.svg" alt="100%x180">
-                        <span slot="card-title-front">AURORA</span>
-                        <span slot="card-text-front">Medium, Adult</span>
-                        <span slot="card-location-front">Yucca Valley, CA</span>
-                    </flip-card>
+                  <div class="card" id="card-flip-none">
+                    <div class="card-front__image">
+                      <a href="#">
+                        <img src="images/faqIconQuestions.svg">
+                      </a>
+                    </div>
+                    <div class="card-front__block--details">
+                        <a href="#" class="card-front__details">
+                            See more questions
+                        </a>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
       </section>
       <!-- Recommended Products (R.P.)-->
-      <div class="container-fluid d-flex p-2">
-        <div class="p-2 flex-fill">
+      <div class="container-fluid d-flex p-2 max-width">
+        <div class="p-2 flex-fill bottom__margin">
             <h1>Recommended Products</h1>
         </div>  
         <div>
@@ -130,25 +155,25 @@
       </div>
       <!-- R.P. Cards -->
       <section>
-          <div class="container">
+          <div class="container bottom__margin">
             <div class="row">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                <div class="card m-2" style="width: 22rem;">
+                    <img src="images/recprodCrate.png" class="card-img-top" alt="crate">
                     <div class="card-body">
                       <p class="card-text">MidWest Homes for Pets Dog Crate Double Door</p>
                       <a href="#" class="btn btn-primary">EXPLORE CRATES</a>
                     </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                  <div class="card m-2" style="width: 22rem;">
+                    <img src="images/recprodFood.png" class="card-img-top" alt="food">
                     <div class="card-body">
                       <p class="card-text">BLUE Wilderness Nature Evolutionary Diet</p>
                       <a href="#" class="btn btn-primary">EXPLORE FOOD</a>
                     </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
+                  <div class="card m-2" style="width: 22rem;">
+                    <img src="images/recprodGrooming.png" class="card-img-top" alt="brush">
+                    <div class="card-body d-flex flex-column justify-content-between">
                       <p class="card-text">Furminator Pro Undercoat Rake</p>
                       <a href="#" class="btn btn-primary">EXPLORE GROOMING</a>
                     </div>
@@ -158,30 +183,29 @@
       </section>
     <!-- Footer -->
     <section>
-        <div class="footer"> <!-- Background -->
-            <div class="footer__text">
-            <div class="p-2"> <!-- Newsletter -->
-                <a href="..." class="footer__link">Join Our Newsletter</a>
-            </div>
-            <div class="p-2"> <!-- Social Icons -->
-                <a href="https://www.facebook.com/lunasavessiberians/?ref=page_internal" class="footer__social">
-                <img src="images/iconFacebook.svg">
-                </a>
-                <a href="https://www.instagram.com/luna_siberian_rescue/" class="footer__social">
-                <img src="images/iconInstagram.svg">
-                </a>
-            </div>
-            <div class="p-2"> <!-- Email -->
-                <a href="mailto:lunasiberianrescue@aol.com" class="footer__link">lunasiberianrescue@aol.com</a>
-            </div>
-            <div class="p-2"> <!-- Address -->
-                <a href="https://goo.gl/maps/Z2ns6kiSNzBjZbbH7" class="footer__link">57552 Twenty Nine Palms Hwy Suite 294<br>Yucca Valley, CA 92284</a>
-            </div>
-            </div>
+      <div class="footer"> <!-- Background -->
+        <div class="footer__text">
+          <div class="p-2"> <!-- Newsletter -->
+            <a href="..." class="footer__link">Join Our Newsletter</a>
+          </div>
+          <div class="p-2"> <!-- Social Icons -->
+            <a href="https://www.facebook.com/lunasavessiberians/?ref=page_internal" class="footer__social">
+              <img src="images/iconFacebook.svg">
+            </a>
+            <a href="https://www.instagram.com/luna_siberian_rescue/" class="footer__social">
+              <img src="images/iconInstagram.svg">
+            </a>
+          </div>
+          <div class="p-2"> <!-- Email -->
+            <a href="mailto:lunasiberianrescue@aol.com" class="footer__link">lunasiberianrescue@aol.com</a>
+          </div>
+          <div class="p-2"> <!-- Address -->
+            <a href="https://goo.gl/maps/Z2ns6kiSNzBjZbbH7" class="footer__link">57552 Twenty Nine Palms Hwy Suite 294<br>Yucca Valley, CA 92284</a>
+          </div>
         </div>
-        <div class="footer__copyright">© 2021 Luna Siberian Husky Rescue</div>
-        </section>
-
+      </div>
+      <div class="footer__copyright">© 2021 Luna Siberian Husky Rescue</div>
+    </section>
 
 
 
