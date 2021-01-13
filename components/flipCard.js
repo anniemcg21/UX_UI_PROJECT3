@@ -13,7 +13,9 @@ flipCardTemplate.innerHTML = `
                     <div class="card-front__title">
                         <slot name="card-title-front"></slot>
                     </div>
-                    <img class="card-back__gender" src="images/iconMale.svg">
+                    <div class="card-front__gender">
+                        <slot name="card-front__gender"></slot>
+                    </div>
                 </div>
                 <div class="card-front__block--details">
                     <div class="card-front__details">
@@ -35,7 +37,9 @@ flipCardTemplate.innerHTML = `
                     <div class="card-back__title">
                         <slot name="card-subtitle-back"></slot>
                     </div>
-                    <img class="card-back__gender" src="images/iconMale.svg">
+                    <div class="card-back__gender">
+                    <slot name="card-back__gender"></slot>
+                </div>
                 </div>
                 <div class="card-back__description">
                     <slot name="card-back-description"></slot>
@@ -117,6 +121,10 @@ flipCardTemplate.innerHTML = `
         padding-top: 5px;
     }
 
+    .card-front__gender {
+
+    }
+
     .card-front__details,
     .card-front__location {
         font-family: 'Nunito', sans-serif;
@@ -148,7 +156,7 @@ flipCardTemplate.innerHTML = `
     }
 
     .card-back__gender {
-        width: 20px;
+        line-height: .8;
     }
 
     .card-back__description {
