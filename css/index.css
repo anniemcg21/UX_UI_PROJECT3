@@ -1,3 +1,57 @@
+/* Modal */
+.modal-dialog-full-width {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width:none !important;
+}
+.modal {
+    padding-right: 0 !important;
+}
+.modal-body {
+    flex: initial;
+}
+.modal-content-full-width  {
+    height: auto !important;
+    min-height: 100% !important;
+    border-radius: 0 !important;
+    background-color: #ececec !important 
+}
+
+.modal-header-full-width  {
+    border-bottom: 1px solid #9ea2a2 !important;
+}
+
+.modal-footer-full-width  {
+    width: fit-content;
+    padding: 0;
+    border-top: none;
+    margin-top: auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 480px 400px;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    padding: 10px;
+    justify-content: center;
+}
+.grid-item-1 {
+    grid-row: 1 / span 3;
+}
+.grid-item-border {
+    border: #749EC1;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 2%;
+    line-height: 2.5;
+    font-family: 'Nunito';
+    font-size: 18pt;
+    padding-left: 8%;
+
+}
+
 #more {display: none;}
 .max-width {
     max-width: 1200px
@@ -24,6 +78,18 @@
     border-color: #806075;
     background-color: #806075;
 }
+.btn-primary:focus {
+    border-color: #806075;
+    background-color: #806075;
+    outline: none;
+    box-shadow: none;
+}
+.btn-primary:active {
+    border-color: #806075 !important;
+    background-color: #806075 !important;
+    outline: none;
+    box-shadow: none;
+}
 .btn-secondary {
     border-radius: 5px;
     border-color: #806075;
@@ -40,6 +106,20 @@
     border-color: #806075;
     background-color: #806075;
     text-decoration: underline;
+}
+.btn-secondary:focus {
+    border-color: #806075;
+    background-color: #806075;
+    text-decoration: underline;
+    outline: none;
+    box-shadow: none;
+}
+.btn-secondary:active {
+    border-color: #806075;
+    background-color: #806075;
+    text-decoration: underline;
+    outline: none;
+    box-shadow: none;
 }
 .btn-link {
     color: #56414F;

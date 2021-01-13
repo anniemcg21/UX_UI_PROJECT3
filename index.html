@@ -26,6 +26,8 @@
     <!-- Component Injection -->
     <script src="components/flipCard.js" type="text/javascript" defer></script>
 
+
+
     <!-- Google Fonts -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Montserrat">
@@ -77,7 +79,7 @@
         <div class="d-flex flex-row justify-content-between">
           <div class="home__hero--text">
             <div class="text__hero">Every Husky Deserves A Happy Tail</div>
-            <div class="text__subhero">SINCE 2012</div>
+            <div class="text__subhero">EST. 2012</div>
           </div>
           <div>
             <img class="ml-n5 home__hero--image" src="images/homepageHeroTransparent.png">
@@ -90,7 +92,35 @@
           Thinking about adopting a husky? Take our quiz to find out more about the breed.
         </div>  
         <div>
-            <button type="button" class="btn btn-secondary btn-lg quiz__cta--button">BEGIN QUIZ</button>
+            <button id="modalActivate" type="button" class="btn btn-secondary btn-lg quiz__cta--button" data-toggle="modal" data-target="#exampleModalPreview">BEGIN QUIZ</button>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+        <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+            <div class="modal-content-full-width modal-content ">
+                <div class=" modal-header-full-width   modal-header text-center">
+                    <h5 class="modal-title w-100" id="exampleModalPreviewLabel"> Thinking About Adopting a Husky?</h5>
+                    <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                        <span style="font-size: 1.3em;" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="section-heading text-center wow fadeIn my-5 pt-3"> How much exercise does your husky need?</h2>
+                </div>
+                <div class="grid-container">
+                  <div class="grid-item-1">
+                    <img src="images/modalQ1.png">
+                  </div>
+                  <div class="grid-item-2 grid-item-border">30 minutes a day.</div>
+                  <div class="grid-item-3 grid-item-border">At least 2 hours a day.</div>  
+                  <div class="grid-item-4 grid-item-border">At most 4 hours a day.</div>
+                </div>
+                <div class="modal-footer-full-width  modal-footer">
+                  <img src="images/modalFooter.svg">  
+                  <!-- <button type="button" class="btn btn-secondary btn-md btn-rounded" data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
         </div>
       </div>
       <!-- Adoptable Dogs -->
